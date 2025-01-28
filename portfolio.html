@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="nav">
+      <!-- Hidden checkbox to toggle the menu -->
+      <input type="checkbox" id="menuToggle" class="menu-toggle" />
+
+      <!-- Menu -->
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <span class="nav__icon"><i class="fas fa-home"></i></span>
+              <h3 class="nav__name">Home</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">
+              <span class="nav__icon"><i class="fas fa-user"></i></span>
+              <h3 class="nav__name">About</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="portfolio.html" class="nav__link">
+              <span class="nav__icon"><i class="fas fa-briefcase"></i></span>
+              <h3 class="nav__name">Portfolio</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">
+              <span class="nav__icon"><i class="fa fa-envelope-open"></i></span>
+              <h3 class="nav__name">Contact</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="blog.html" class="nav__link">
+              <span class="nav__icon"><i class="fa fa-comments"></i></span>
+              <h3 class="nav__name">Blog</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Toggle button -->
+      <label for="menuToggle" class="nav__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </nav>
+    <section class="portfolio section">
+      <header>
+        <div class="portfolio-header text-center position-relative">
+          <h1 class="portfolio-bg-text">WORKS</h1>
+          <h1 class="portfolio-title">
+            <span class="my">MY</span> <span class="portfolio">PORTFOLIO</span>
+          </h1>
+        </div>
+      </header>
+      <div class="portfolio__container container grid">
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio__item" data-row="1" data-column="1">
+          <figure>
+            <img src="images/work1.jpg" alt="Work 1" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">IMAGE PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio__item" data-row="1" data-column="2">
+          <figure>
+            <img src="images/work2.jpg" alt="Work 2" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">YOUTUBE PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio__item" data-row="1" data-column="3">
+          <figure>
+            <img src="images/work3.jpg" alt="Work 3" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">SLIDER PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 4 -->
+        <div class="portfolio__item" data-row="2" data-column="1">
+          <figure>
+            <img src="images/work4.jpg" alt="Work 4" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">LOCAL VIDEO PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 5 -->
+        <div class="portfolio__item" data-row="2" data-column="2">
+          <figure>
+            <img src="images/work5.jpg" alt="Work 5" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">IMAGE PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 6 -->
+        <div class="portfolio__item" data-row="2" data-column="3">
+          <figure>
+            <img src="images/work6.jpg" alt="Work 6" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">IMAGE PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 7 -->
+        <div class="portfolio__item" data-row="2" data-column="3">
+          <figure>
+            <img src="images/work7.jpg" alt="Work 7" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">IMAGE PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 8 -->
+        <div class="portfolio__item" data-row="2" data-column="3">
+          <figure>
+            <img src="images/work8.jpg" alt="Work 8" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">IMAGE PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- Portfolio Item 9 -->
+        <div class="portfolio__item" data-row="2" data-column="3">
+          <figure>
+            <img src="images/work9.jpg" alt="Work 9" class="portfolio__img" />
+            <figcaption class="portfolio__hover">
+              <h3 class="portfolio__title">IMAGE PROJECT</h3>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Structure 1 -->
+    <div id="modal1" class="portfolio__modal">
+      <div class="portfolio__modal-content">
+        <a href="#" class="modal__close">&times;</a>
+        <h3 class="modal__title">IMAGE PROJECT</h3>
+        <ul class="modal__list grid">
+          <li class="modal__item">
+            <span class="item__icon">&#128203;</span>
+            <div>
+              <span class="item__title">Project :</span>
+              <span class="item__details">Photo</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&#128100;</span>
+            <div>
+              <span class="item__title">Client :</span>
+              <span class="item__details">Dribble</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&lt;/&gt;</span> <!-- Icon for Languages -->
+            <div>
+              <span class="item__title">Languages :</span>
+              <span class="item__details">HTML, CSS, Javascript</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&#128279;</span>
+            <div>
+              <span class="item__title">Preview :</span>
+              <span class="item__details"><a href="www.envato.com" class="link">www.envato.com</a></span>
+            </div>
+          </li>
+        </ul>
+        <img src="images/work1.jpg" alt="" class="modal__img" />
+      </div>
+    </div>
+    <button class="modal__arrow modal__arrow--left">&#8249;</button>
+    <button class="modal__arrow modal__arrow--right">&#8250;</button>
+    
+</div>
+
+    <!-- Modal Structure 2 -->
+    <div id="modal2" class="portfolio__modal">
+      <div class="portfolio__modal-content">
+        <a href="#" class="modal__close">&times;</a>
+        <h3 class="modal__title">YOUTUBE PROJECT</h3>
+        <ul class="modal__list grid">
+          <li class="modal__item">
+            <span class="item__icon">&#128203;</span>
+            <div>
+              <span class="item__title">Project :</span>
+              <span class="item__details">Video</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&#128100;</span>
+            <div>
+              <span class="item__title">Client :</span>
+              <span class="item__details">Videohive</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&lt;/&gt;</span>
+            <div>
+              <span class="item__title">Languages :</span>
+              <span class="item__details">Adobe After Effects</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&#128279;</span>
+            <div>
+              <span class="item__title">Preview :</span>
+              <span class="item__details"><a href="www.videohive.net" class="link">www.videohive.net</a></span>
+            </div>
+          </li>
+        </ul>
+        <img src="images/work2.jpg" alt="" class="modal__img" />
+      </div>
+    </div>
+
+    <!-- Modal Structure 3 -->
+    <div id="modal3" class="portfolio__modal">
+      <div class="portfolio__modal-content">
+        <a href="#" class="modal__close">&times;</a>
+        <h3 class="modal__title">SLIDER PROJECT</h3>
+        <ul class="modal__list grid">
+          <li class="modal__item">
+            <span class="item__icon">&#128203;</span>
+            <div>
+              <span class="item__title">Project :</span>
+              <span class="item__details">Website</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&#128100;</span>
+            <div>
+              <span class="item__title">Client :</span>
+              <span class="item__details">Themeforest</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&lt;/&gt;</span>
+            <div>
+              <span class="item__title">Languages :</span>
+              <span class="item__details">HTML, CSS, Javascript</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <span class="item__icon">&#128279;</span>
+            <div>
+              <span class="item__title">Preview :</span>
+              <span class="item__details"><a href="www.themeforest.net" class="link">www.themeforest.net</a></span>
+            </div>
+          </li>
+        </ul>
+        <img src="images/work3.jpg" alt="" class="modal__img" />
+      </div>
+    </div>
+    <!-- Modal Structure 4 -->
+    <div id="modal3" class="portfolio__modal">
+        <div class="portfolio__modal-content">
+          <a href="#" class="modal__close">&times;</a>
+          <h3 class="modal__title">LOCAL VIDEO PROJECT</h3>
+          <ul class="modal__list grid">
+            <li class="modal__item">
+              <span class="item__icon">&#128203;</span>
+              <div>
+                <span class="item__title">Project :</span>
+                <span class="item__details">Video</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128100;</span>
+              <div>
+                <span class="item__title">Client :</span>
+                <span class="item__details">Videohive</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&lt;/&gt;</span>
+              <div>
+                <span class="item__title">Languages :</span>
+                <span class="item__details">Adobe Premium</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128279;</span>
+              <div>
+                <span class="item__title">Preview :</span>
+                <span class="item__details"><a href="www.envato.net" class="link">www.envato.net</a></span>
+              </div>
+            </li>
+          </ul>
+          <img src="images/work4.jpg" alt="" class="modal__img" />
+        </div>
+      </div>
+      <!-- Modal Structure 5 -->
+    <div id="modal3" class="portfolio__modal">
+        <div class="portfolio__modal-content">
+          <a href="#" class="modal__close">&times;</a>
+          <h3 class="modal__title">IMAGE PROJECT</h3>
+          <ul class="modal__list grid">
+            <li class="modal__item">
+              <span class="item__icon">&#128203;</span>
+              <div>
+                <span class="item__title">Project :</span>
+                <span class="item__details">Website</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128100;</span>
+              <div>
+                <span class="item__title">Client :</span>
+                <span class="item__details">Envato</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&lt;/&gt;</span>
+              <div>
+                <span class="item__title">Languages :</span>
+                <span class="item__details">HTML, CSS, Javascript</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128279;</span>
+              <div>
+                <span class="item__title">Preview :</span>
+                <span class="item__details"><a href="www.envato.net" class="link">www.envato.net</a></span>
+              </div>
+            </li>
+          </ul>
+          <img src="images/work5.jpg" alt="" class="modal__img" />
+        </div>
+      </div>
+      <!-- Modal Structure 6 -->
+      <div id="modal3" class="portfolio__modal">
+        <div class="portfolio__modal-content">
+          <a href="#" class="modal__close">&times;</a>
+          <h3 class="modal__title">IMAGE PROJECT</h3>
+          <ul class="modal__list grid">
+            <li class="modal__item">
+              <span class="item__icon">&#128203;</span>
+              <div>
+                <span class="item__title">Project :</span>
+                <span class="item__details">Website</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128100;</span>
+              <div>
+                <span class="item__title">Client :</span>
+                <span class="item__details">Envato</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&lt;/&gt;</span>
+              <div>
+                <span class="item__title">Languages :</span>
+                <span class="item__details">HTML, CSS, Javascript</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128279;</span>
+              <div>
+                <span class="item__title">Preview :</span>
+                <span class="item__details"><a href="www.envato.net" class="link">www.envato.net</a></span>
+              </div>
+            </li>
+          </ul>
+          <img src="images/work6.jpg" alt="" class="modal__img" />
+        </div>
+      </div>
+      <!-- Modal Structure 7 -->
+      <div id="modal3" class="portfolio__modal">
+        <div class="portfolio__modal-content">
+          <a href="#" class="modal__close">&times;</a>
+          <h3 class="modal__title">IMAGE PROJECT</h3>
+          <ul class="modal__list grid">
+            <li class="modal__item">
+              <span class="item__icon">&#128203;</span>
+              <div>
+                <span class="item__title">Project :</span>
+                <span class="item__details">Website</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128100;</span>
+              <div>
+                <span class="item__title">Client :</span>
+                <span class="item__details">Envato</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&lt;/&gt;</span>
+              <div>
+                <span class="item__title">Languages :</span>
+                <span class="item__details">HTML, CSS, Javascript</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128279;</span>
+              <div>
+                <span class="item__title">Preview :</span>
+                <span class="item__details"><a href="www.envato.net" class="link">www.envato.net</a></span>
+              </div>
+            </li>
+          </ul>
+          <img src="images/work7.jpg" alt="" class="modal__img" />
+        </div>
+      </div>
+      <!-- Modal Structure 8 -->
+      <div id="modal3" class="portfolio__modal">
+        <div class="portfolio__modal-content">
+          <a href="#" class="modal__close">&times;</a>
+          <h3 class="modal__title">IMAGE PROJECT</h3>
+          <ul class="modal__list grid">
+            <li class="modal__item">
+              <span class="item__icon">&#128203;</span>
+              <div>
+                <span class="item__title">Project :</span>
+                <span class="item__details">Website</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128100;</span>
+              <div>
+                <span class="item__title">Client :</span>
+                <span class="item__details">Envato</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&lt;/&gt;</span>
+              <div>
+                <span class="item__title">Languages :</span>
+                <span class="item__details">HTML, CSS, Javascript</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128279;</span>
+              <div>
+                <span class="item__title">Preview :</span>
+                <span class="item__details"><a href="www.envato.net" class="link">www.envato.net</a></span>
+              </div>
+            </li>
+          </ul>
+          <img src="images/work8.jpg" alt="" class="modal__img" />
+        </div>
+      </div>
+      <!-- Modal Structure 9 -->
+      <div id="modal3" class="portfolio__modal">
+        <div class="portfolio__modal-content">
+          <a href="#" class="modal__close">&times;</a>
+          <h3 class="modal__title">IMAGE PROJECT</h3>
+          <ul class="modal__list grid">
+            <li class="modal__item">
+              <span class="item__icon">&#128203;</span>
+              <div>
+                <span class="item__title">Project :</span>
+                <span class="item__details">Website</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128100;</span>
+              <div>
+                <span class="item__title">Client :</span>
+                <span class="item__details">Envato</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&lt;/&gt;</span>
+              <div>
+                <span class="item__title">Languages :</span>
+                <span class="item__details">HTML, CSS, Javascript</span>
+              </div>
+            </li>
+            <li class="modal__item">
+              <span class="item__icon">&#128279;</span>
+              <div>
+                <span class="item__title">Preview :</span>
+                <span class="item__details"><a href="www.envato.net" class="link">www.envato.net</a></span>
+              </div>
+            </li>
+          </ul>
+          <img src="images/work9.jpg" alt="" class="modal__img" />
+        </div>
+      </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const portfolioItems = document.querySelectorAll(".portfolio__item");
+    const modals = document.querySelectorAll(".portfolio__modal");
+    const closeButtons = document.querySelectorAll(".modal__close");
+    const arrows = document.querySelectorAll(".modal__arrow");
+
+    let currentModalIndex = null; // Track the current modal
+
+    // Open modal when a portfolio item is clicked
+    portfolioItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            modals[index].classList.add("active"); // Add 'active' class to show the modal
+            currentModalIndex = index; // Update the current modal index
+            showArrows(); // Show the arrows when the modal is open
+        });
+    });
+
+    // Close modal when the close button is clicked
+    closeButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            e.preventDefault(); // Prevent default link behavior
+            button.closest(".portfolio__modal").classList.remove("active"); // Remove 'active' class to hide the modal
+            currentModalIndex = null; // Reset the current modal index
+            hideArrows(); // Hide the arrows when the modal is closed
+        });
+    });
+
+    // Optional: Close modal when clicked outside the modal content
+    modals.forEach((modal) => {
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.remove("active");
+                currentModalIndex = null; // Reset the current modal index
+                hideArrows(); // Hide the arrows when the modal is closed
+            }
+        });
+    });
+
+    // Show and hide arrow buttons
+    function showArrows() {
+        arrows.forEach(arrow => arrow.style.display = "block");
+    }
+
+    function hideArrows() {
+        arrows.forEach(arrow => arrow.style.display = "none");
+    }
+
+    // Arrow button functionality (Next and Previous)
+    arrows.forEach(arrow => {
+        arrow.addEventListener("click", (e) => {
+            if (e.target.classList.contains("modal__arrow--left")) {
+                // Previous modal
+                if (currentModalIndex > 0) {
+                    modals[currentModalIndex].classList.remove("active");
+                    currentModalIndex--;
+                    modals[currentModalIndex].classList.add("active");
+                }
+            } else if (e.target.classList.contains("modal__arrow--right")) {
+                // Next modal
+                if (currentModalIndex < modals.length - 1) {
+                    modals[currentModalIndex].classList.remove("active");
+                    currentModalIndex++;
+                    modals[currentModalIndex].classList.add("active");
+                }
+            }
+        });
+    });
+});
+
+    </script>
+  </body>
+</html>

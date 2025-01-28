@@ -1,0 +1,426 @@
+:root {
+    --primary-color: #72b626; /* Green color */
+    --secondary-color: #f5f5f5; /* Light gray background */
+    --text-color: #333; /* Dark text color */
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --bg-color: #f9f9f9;
+    --border-color: #ddd;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* General navigation styles */
+.nav {
+    position: fixed;
+    inset-block: 0;
+    right: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav__menu {
+    position: fixed;
+    inset-block: 0;
+    left: -100%;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 60px 30px;
+    transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  
+  .nav__list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav__item {
+    margin-block: 20px;
+  }
+  
+  .nav__link {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    border-bottom: 1px solid var(--border-color);
+    padding-block: 14px;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .nav__icon {
+    font-size: 24px;
+  }
+  
+  .nav__name {
+    font-weight: var(--weight-500);
+  }
+  
+  /* Menu toggle behavior using checkbox */
+  .menu-toggle {
+    display: none;
+  }
+  
+  .menu-toggle:checked + .nav__menu {
+    left: 0;
+  }
+  
+  .menu-toggle:checked + .nav__menu + .nav__toggle .animate-toggle span:first-child {
+    transform: rotate(45deg) translate(6px, 4px);
+  }
+  
+  .menu-toggle:checked + .nav__menu + .nav__toggle .animate-toggle span:nth-child(2) {
+    display: none;
+  }
+  
+  .menu-toggle:checked + .nav__menu + .nav__toggle .animate-toggle span:last-child {
+    transform: rotate(-45deg) translate(1px, 1px);
+  }
+  
+  /* Toggle button styles */
+  .nav__toggle {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    padding: 12px 10px;
+    cursor: pointer;
+  }
+  
+  .nav__toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: var(--text-color);
+    margin-bottom: 5px;
+  }
+  
+  .animate-toggle span:first-child {
+    transition: transform 0.3s ease;
+  }
+  
+  .animate-toggle span:nth-child(2) {
+    transition: display 0.3s ease;
+  }
+  
+  .animate-toggle span:last-child {
+    transition: transform 0.3s ease;
+  }
+
+
+.section {
+    /* padding: 60px 20px;  */
+    text-align: center;
+} 
+
+.portfolio-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 140px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.portfolio-bg-text {
+    position: absolute;
+    font-size: 8rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1); /* Improved visibility */
+    text-transform: uppercase;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.portfolio-title {
+    font-size: 3rem;
+    font-weight: 900;
+    z-index: 2;
+    text-transform: uppercase;
+    position: relative;
+}
+.portfolio-title .my {
+    color: rgb(119, 119, 119);
+}
+
+.portfolio-title .portfolio {
+    color: var(--primary-color);
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  margin: 30px 200px;
+}
+
+.portfolio__item {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin: 0;
+  height: 80%;
+  width: 90%; /* Reduce width to shrink the item */
+  aspect-ratio: 4 / 3; /* Maintain the height proportional to width */
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+
+.portfolio__item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio__img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+figure {
+    margin: 0; /* Reset default margin of <figure> */
+    padding: 0; /* Reset padding */
+    display: block; /* Ensure block-level behavior */
+    width: 100%; /* Ensure figure spans the entire parent */
+    height: 100%; /* Ensure it covers the parent height */
+}
+
+.portfolio__hover {
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+.portfolio__hover h3 {
+    color: white;
+    text-align: center;
+}
+
+.portfolio__item:hover .portfolio__hover {
+    opacity: 1;
+}
+
+.portfolio__title {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Modal Styles */
+.portfolio__modal {
+    display: none; /* Default hidden state */
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    place-items: center;
+    padding: 0px;
+}
+
+.portfolio__modal.active {
+    display: grid; /* Show when active */
+}
+
+.portfolio__modal-content {
+    background-color: var(--secondary-color);
+    max-width: 650px;
+    width: 100%;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    position: relative;
+    text-align: center;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal__title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.modal__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+}
+
+.modal__item {
+    display: flex;
+    gap: 8px;
+}
+
+.item__icon {
+    font-size: 0.8rem;
+    color: rgb(104, 103, 103); 
+}
+
+.item__title {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.item__details {
+    font-weight: bold;
+    color: rgb(104, 103, 103);
+    font-size: 0.9rem;
+}
+
+.link {
+  color: var(--primary-color);
+}
+
+.modal__img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Position the arrows outside the modal container */
+/* Hide arrows initially */
+.modal__arrow {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+    transform: translateY(-50%);
+    font-size: 4rem; /* Arrow size */
+    cursor: pointer;
+    z-index: 9999; /* Ensure arrows appear above other content */
+    color: gray; /* Set arrow color to gray */
+    border: none; /* No border */
+    background: none; /* No background */
+}
+
+/* Left and Right arrows */
+.modal__arrow--left {
+    left: 10px;
+}
+
+.modal__arrow--right {
+    right: 10px;
+}
+
+/* When the modal is active, show the arrows */
+.portfolio__modal.active ~ .modal__arrow {
+    display: block; /* Show arrows when modal is active */
+}
+
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+
+    .nav__menu {
+        all: unset;
+      }
+    
+      .nav__toggle {
+        display: none;
+      }
+    
+      .nav {
+        position: fixed;
+        inset-block: 0;
+        right: 30px;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+      }
+    
+      .nav__item {
+        margin-block: 20px;
+      }
+    
+      .nav__link {
+        padding: 0;
+        border-bottom: none;
+        background-color: rgb(232, 232, 232);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+      }
+    
+      .nav__icon {
+        font-size: 17px;
+        margin-inline: auto;
+        color: #5c5b5b;
+      }
+    
+      .nav__name {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        height: 100%;
+        line-height: 50px;
+        padding-inline: 30px 25px;
+        border-radius: 30px;
+        font-size: var(--small-font-size);
+        color: var(--secondary-color);
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        transition: all 0.3s ease;
+      }
+    
+      .nav__link:hover .nav__name {
+        right: 27px;
+        color: var(--secondary-color);
+        opacity: 1;
+        visibility: visible;
+        border-radius: 30px 0 0 30px;
+      }
+    
+      .nav__link:hover,
+      .active-nav {
+        background-color: var(--primary-color);
+      }
+    
+      .nav__link:hover .nav__icon,
+      .active-nav .nav__icon {
+        color: var(--secondary-color);
+      }
+    }
+
+
+
+

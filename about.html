@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="../css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="nav">
+        <!-- Hidden checkbox to toggle the menu -->
+        <input type="checkbox" id="menuToggle" class="menu-toggle" />
+        
+        <!-- Menu -->
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <span class="nav__icon"><i class="fas fa-home"></i></span>
+              <h3 class="nav__name">Home</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">
+              <span class="nav__icon"><i class="fas fa-user"></i></span>
+              <h3 class="nav__name">About</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="portfolio.html" class="nav__link">
+              <span class="nav__icon"><i class="fas fa-briefcase"></i></span>
+              <h3 class="nav__name">Portfolio</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">
+              <span class="nav__icon"><i class="fa fa-envelope-open"></i></span>
+              <h3 class="nav__name">Contact</h3>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="blog.html" class="nav__link">
+              <span class="nav__icon"><i class="fa fa-comments"></i></span>
+              <h3 class="nav__name">Blog</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+        <!-- Toggle button -->
+        <label for="menuToggle" class="nav__toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </nav>
+      
+    <main class="section container">
+      <!-- About Section -->
+      <section class="about-me-section" id="about">
+        <header>
+          <div class="about-header text-center position-relative">
+            <h1 class="about-bg-text">RESUME</h1>
+        <h1 class="about-me-title"><span class="about">ABOUT</span> <span class="me">ME</span></h1>
+        </div>
+        </header>
+
+        <!-- About Information -->
+        <div class="row about__container">
+
+
+          <!-- Personal Info -->
+          <div class="row info">
+            <!-- First Column -->
+            <div class="col-md-6 info__column">
+              <ul class="info__list">
+                <li class="info__item"><span class="info__label">First Name :</span> Arbaj</li>
+                <li class="info__item"><span class="info__label">Last Name :</span> Patel</li>
+                <li class="info__item"><span class="info__label">Age :</span> 22 Years</li>
+                <li class="info__item"><span class="info__label">Nationality :</span> India</li>
+                <li class="info__item"><span class="info__label">Freelance :</span> Available</li>
+              </ul>
+            </div>
+          
+            <!-- Second Column -->
+            <div class="col-md-6 info__column">
+              <ul class="info__list">
+                <li class="info__item"><span class="info__label">Address :</span> K.D.Palace</li>
+                <li class="info__item"><span class="info__label">Phone :</span> +91 9131986582</li>
+                <li class="info__item"><span class="info__label">Email :</span> arbajpatel475@gmail.com</li>
+                <!--<li class="info__item"><span class="info__label">Skype :</span> lucy.milner</li>-->
+                <li class="info__item"><span class="info__label">Languages :</span> Hindi, English</li>
+              </ul>
+              <a href="/pdf/Arbaj_Resume.pdf" class="download-cv" download>
+  <span>Download CV</span>
+  <span class="button__icon"><i class="fas fa-arrow-right"></i></span>
+</a>
+
+<a href="#" class="download-cv" onclick="showResumePopup(event)">
+  <span>View CV</span>
+  <span class="button__icon"><i class="fas fa-arrow-right"></i></span>
+</a>
+
+<script>
+  function showResumePopup(event) {
+    event.preventDefault(); // Prevent the default link action
+    window.open('/pdf/Arbaj_Resume.pdf', '_blank');
+  }
+</script>
+
+
+            </div>
+          </div>
+          
+<script>
+// function downloadResume() {
+//   window.open('/pdf/resume.pdf', '_blank');
+// }
+
+</script>
+          <!-- Statistics -->
+          <div class="col-md-6 stats d-flex flex-wrap justify-content-between">
+            <div class="stats__box">
+              <h3 class="stats__no">2+</h3>
+              <p class="stats__title">
+                Years of <br />
+                experience
+              </p>
+            </div>
+            <div class="stats__box">
+              <h3 class="stats__no">15+</h3>
+              <p class="stats__title">
+                Completed <br />
+                projects
+              </p>
+            </div>
+            <div class="stats__box">
+              <h3 class="stats__no">81+</h3>
+              <p class="stats__title">
+                Happy <br />
+                customers
+              </p>
+            </div>
+            <div class="stats__box">
+              <h3 class="stats__no">53+</h3>
+              <p class="stats__title">
+                Awards <br />
+                won
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+
+        <!-- Skills -->
+        <h3 class="section__subtitle text-center">MY SKILLS</h3>
+        <div class="skills__container">
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 25">
+              <div>80%</div>
+            </div>
+            <h3 class="skills__title">HTML</h3>
+          </div>
+
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 89">
+              <div>80%</div>
+            </div>
+            <h3 class="skills__title">JAVASCRIPT</h3>
+          </div>
+
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 70">
+              <div>50%</div>
+            </div>
+            <h3 class="skills__title">CSS</h3>
+          </div>
+
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 66">
+              <div>80%</div>
+            </div>
+            <h3 class="skills__title">PHP</h3>
+          </div>
+
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 95">
+              <div>50%</div>
+            </div>
+            <h3 class="skills__title">WORDPRESS</h3>
+          </div>
+
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 50">
+              <div>80%</div>
+            </div>
+            <h3 class="skills__title">JQUERY</h3>
+          </div>
+
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 65">
+              <div>85%</div>
+            </div>
+            <h3 class="skills__title">Laravel</h3>
+          </div>
+
+          <div class="skill-item">
+            <div class="progress__circle" style="--percentage: 45">
+              <div>50%</div>
+            </div>
+            <h3 class="skills__title">REACT</h3>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+
+        <!-- Resume -->
+        <h3 class="section__subtitle text-center">EXPERIENCE & EDUCATION</h3>
+        <div class="resume__container">
+          <div class="resume__item">
+            <div class="resume__icon">💼</div>
+            <div>
+              <span class="resume__date">2023 - Present</span>
+              <h3 class="resume__subtitle">
+                Senior Web Developer <span class="resume__title">— Geektheory</span>
+              </h3>
+              <p class="resume__description">
+                Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
+                labore adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__icon">💼</div>
+            <div>
+              <span class="resume__date">2023 - 2024</span>
+              <h3 class="resume__subtitle">
+                Laravel Backend Developer <span class="resume__title">— Geektheory</span>
+              </h3>
+              <p class="resume__description">
+                Lorem incididunt dolor sit amet, consectetur eiusmod dunt
+                doldunt dol elit, tempor incididunt.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__icon">💼</div>
+            <div>
+              <span class="resume__date">2022 - 2023</span>
+              <h3 class="resume__subtitle">
+                Web Designing <span class="resume__title">— Brillsense</span>
+              </h3>
+              <p class="resume__description">
+                Lorem ipsum dolor sit amet, tempor incididunt ut labore
+                consectetur elit.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__icon">🎓</div>
+            <div>
+              <span class="resume__date">2019-2023</span>
+              <h3 class="resume__subtitle">
+                B.Tech (CSE)
+                <span class="resume__title">— SGSITS Ujjain</span>
+              </h3>
+              <p class="resume__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                tempor incididunt ut labore.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__icon">🎓</div>
+            <div>
+              <span class="resume__date">2018-2019</span>
+              <h3 class="resume__subtitle">
+                12th
+                <span class="resume__title">— Govt. H. S. S. Maharajwada No. 03 , Ujjain</span>
+              </h3>
+              <p class="resume__description">
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                tempor incididunt ut adipisicing.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__icon">🎓</div>
+            <div>
+              <span class="resume__date">2016-2017</span>
+              <h3 class="resume__subtitle">
+                10th
+                <span class="resume__title">— Govt. H. S. S. Bherugarh Ujjain</span>
+              </h3>
+              <p class="resume__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor ut labore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
